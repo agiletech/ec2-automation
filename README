@@ -1,0 +1,27 @@
+Installing web servers on EC2 instances is a process full with pitfalls and potential problems.
+
+Usually you would pick a distro you are comfortable with, install LAMP and other packages,
+configure, create external drive copy more stuff in there, then perform reboot. If you encounter
+problem during reboot and instance is not coming up, you're screwed.
+
+One solution is to build your own custom bundle and upload it to amazon. You will nede to be
+careful and not to bundle files you're not supposed to. However you can't re-create a bundle
+after changing anything inside /etc/
+
+Another solution is to keep list of files which was changed since the last bundle creation
+on the external archive. 
+
+This set of tools encorporates utilties for both approaches and in both cases makes
+process fully automated. It's optimized for Gentoo, but can be used with other distros.
+=================================================================================================
+
+1. Installation
+
+mkdir /etc/private
+chmod 700 /etc/private
+
+vim /etc/private/pk.pem
+
+[ paste PRIVATE key, for image generation ]
+
+

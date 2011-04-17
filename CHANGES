@@ -1,0 +1,6 @@
+v1 - Initial release
+v2 - Installed services, complete system/world update
+v2.0.1 - fixed postfix sasl config, fixes firstrun.sh
+v2.1 - Reconfigured apache properly, set up 'prod' runlevel, set up mail gateway, install trac, more
+v2.1.1 - additional minor changes (accumulated over time), backed up because system started to crash
+v2.2 - Comes with 2.6.18 xenU kernel (ec2)
